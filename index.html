@@ -1,0 +1,181 @@
+<!-- We are Covered these points in HTML
+1. What is HTML
+2. HTML Heading 
+3. HTML Paragraph 
+4. HTML Text Formating 
+5. HTML Style 
+6. HTML Commants
+7. HTML links
+8. HTML Images 
+9. HTMl Table 
+10.HTML Lists 
+11.HTML Forms-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS</title>
+    <!-- we starting the work on CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <style>
+        /* *{font-family: 'Jost', sans-serif;} */
+        .tayyab{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .CH{
+            font-style: italic;
+        }
+        .font{
+            font-weight: 700;
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> HTML and CSS in One Video</h1>
+    <div class="tayyab">HTML AND CSS IN ONE VIDEO</div>
+    <p class="tayyab">HTML AND CSS IN ONE VIDEO</p>
+    <i>HTML AND CSS IN ONE VIDEO</i>
+    <div class="CH">HTML AND <i class="font">CSS IN ONE</i> VIDEO</div>
+
+
+    <!-- HTML heading  -->
+    <!-- <h1>Welcome to html and css course in 2021</h1>
+    <h2>Secend heading</h2>
+    <h3>Third Heading</h3>
+    <h4>Fourth Heading</h4>
+    <h5>Fivth heading</h5>
+    <h6>Sixth heading</h6> -->
+
+    <!-- Starting paragraph -->
+    <!-- <p>this is the paragraph</p>  -->
+
+    <!-- ----------------------------html formating Elements--------------------- -->
+    <!-- <b> - bold text </b>
+    <strong> - Important text </strong>
+    <i> Italic text </i>
+    <u>Underline</u>
+    <em>Emphasized text</em>
+    <mark> Marked text </mark>
+    <small>Small text</small>
+    <del>Deleted text</del>
+    <sub>Subcribed text</sub>
+    <sup>Superscipt text</sup> -->
+
+
+    <!-- Starting practice of html formating Elements -->
+    <p>My name is <b><mark>Tayyab Ashraf</mark> </b> I am a <i><u><del>Full stack Developer</del> </u></i> </p>
+
+    <p>H <sub>2</sub>O</p>
+    <p>X <sup>2</sup>+ Y<sup>2</sup></p>
+
+    <!-- Element is the combination of different material data -->
+
+    <!-- Starting style inline in the HTML -->
+    <h1
+        style="color:rgb(159, 219, 18) ; background-color:blueviolet; text-align: center; padding: 30 0; text-transform: capitalize;">
+        This is the style inside the HTML</h1>
+
+    <!-- Now starting the links and images in HTML -->
+    <button><a href="https://www.thapatechnical.com/" target="_blank" style="text-decoration: none;"
+            title="Click to visit Thapa technical page">Thapa Technical Website</a></button><br><br>
+    <hr>
+
+    <!-- HTML Images -->
+    <img src="images/html_css_image.jpg" width="800" height="600" title="Html and CSS Complete video" alt="htmlcsspic">
+    <br><br><br>
+    <hr>
+    <!-- Starting HTML tables -->
+    <center>
+        <table border="1" cellspacing="0" cellpadding="10" style="text-align: center;">
+            <tr>
+                <th colspan="2">YouTube</th>
+                <th>Google</th>
+                <th>FaceBook</th>
+                <th>LinkedIn</th>
+            </tr>
+            <tr>
+                <td>Very Good</td>
+                <td>Impressive</td>
+                <td>Good</td>
+                <td>Very Impressive</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Very Good</td>
+                <td>Impressive</td>
+                <td>Good</td>
+                <td>Very Impressive</td>
+            </tr>
+            <tr>
+                <td>Very Good</td>
+                <td>Impressive</td>
+                <td>Good</td>
+                <td>Very Impressive</td>
+            </tr>
+            <tr>
+                <td>Very Good</td>
+                <td>Impressive</td>
+                <td>Good</td>
+                <td>Very Impressive</td>
+            </tr>
+        </table>
+    </center>
+    <br><br><br><hr>
+    <!-- Now starting the list in HTML ul means unordered list and ol means ordered lists-->
+    <p>List os shopping</p>
+    <!-- There are 3 types of unordered lists square, circle and dist -->
+    <ul type= "square">
+        <li>Laptop</li>
+        <li>Bag</li>
+        <li>Pen</li>
+        <li>NoteBook</li>
+    </ul>
+    <!-- There are many types of ordered list for example A, 1, a, i-->
+    <ol type= "A" start="4">
+        <li>Junaid</li>
+        <li>Tayyab</li>
+        <li>Zahid</li>
+    </ol>
+<br><br><br><hr>
+<!-- Starting the Forms in HTML  -->
+<h3>Contect Form</h3>
+<form action="">
+    <label for="">Username:</label><br>
+    <input type="text" name="username" placeholder="Enter Your Name"><br><br>
+    <label for="">Password:</label><br>
+    <input type="password" name="password" placeholder="Enter Your Password"><br><br>
+    <label for="">Email:</label><br>
+    <input type="email" name="email" placeholder="Enter Your Email"><br><br>
+    <label for="">Mobile No:</label><br>
+    <input type="text" name="mobile" id="mobile" placeholder="Enter Your Mobile Number"><br><br>
+
+    <select name="" id="">
+        <option>Select your plan</option>
+        <option value="personal">Personal</option>
+        <option value="Buiness">Buiness</option>
+        <option value="Premium">Premium</option>
+    </select><br><br>
+    <textarea name="" id="" cols="30" rows="10"  placeholder="Enter Message Here"></textarea><br><br>
+    <p>Select your Gender</p>
+    <input type="radio" name="gender" id=""> Male
+    <input type="radio" name="gender" id=""> Female <br><br>
+
+    <p>Please Read all the instructions Carefully</p>
+    <input type="checkbox" name="" id=""> Yes, I read it all. <br><br>
+
+    <input type="submit" name="submit" value="Submit">
+</form>
+<br><br><br><hr>
+</body>
+
+</html>
