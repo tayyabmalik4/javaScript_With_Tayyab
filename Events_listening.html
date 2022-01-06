@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to Events</title>
+</head>
+<style>
+    .btn {
+        padding: 10px 14px;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: turquoise;
+        border-color: black;
+    }
+</style>
+
+<body>
+
+    <!-- Browser Events
+    click
+    contextmenu
+    mouseover/ mouseout
+    mousedown / mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitioned -->
+
+    <div class="container">
+        <h1>this is the Events and Events Listening in java Script</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis eius saepe, illum, voluptate
+            architecto aut numquam necessitatibus perspiciatis culpa enim blanditiis illo eaque alias eligendi veniam
+            officia at, cum accusamus fugiat soluta quam ducimus? Laborum, provident vero quae ullam vel, perspiciatis
+            natus quisquam veritatis odit alias at enim sit voluptatem consequatur debitis delectus? Autem molestiae
+            non, tenetur ex sapiente magnam blanditiis ducimus. Ipsum praesentium, amet vitae est magnam consectetur.
+            Molestias atque distinctio, repudiandae natus esse officia exercitationem sunt repellendus. Sed deserunt ea
+            eos error iure debitis dolores consequuntur autem non quia, laudantium fuga consequatur aspernatur! Quidem
+            dolorem quaerat necessitatibus, iusto id cum veritatis obcaecati ea sequi qui, quae officiis fuga error
+            aperiam ipsam, harum eius delectus. Repellendus aliquam eos at sapiente, ratione alias saepe quod fuga
+            debitis obcaecati laboriosam officia voluptatem cupiditate! Dolore, eaque quo eius quis laborum facilis
+            repellendus natus libero qui ea in ex optio temporibus harum necessitatibus illo cumque nemo maiores
+            officiis voluptas beatae, tempore aliquam enim veritatis! Est excepturi non, perspiciatis delectus vitae
+            earum dolorum esse expedita numquam temporibus ad veniam voluptatem, placeat quas beatae minima sequi
+            quaerat quibusdam dolor eligendi id laboriosam deleniti magnam voluptatum. Vero, necessitatibus deleniti
+            eligendi perferendis fugiat alias consequuntur soluta accusantium neque sapiente totam quas sed earum ipsa
+            cupiditate, ut velit labore asperiores. Tenetur minus, ex nemo vero enim asperiores, sapiente quae eum
+            dolorum tempora nihil voluptatibus cum facilis provident. Harum beatae odio incidunt unde earum vitae labore
+            quo doloremque dignissimos.</p>
+        <button id="btn" class="btn" onclick="togglehide()">Show and hide</button>
+    </div>
+
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log("Mouse Inside");
+        })
+        para.addEventListener('mouseout', function run(){
+            console.log("Mouse outside");
+        })
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                alertshow = confirm("Are you sure to hide the paragraph");
+                if(alertshow){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+                
+            }
+        }
+        else{
+            alertshow = confirm("Are you sure to show the paragraph");
+            if(alertshow){
+                para.style.display = 'block';
+            }
+            else{
+                    para.style.display = 'none';
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

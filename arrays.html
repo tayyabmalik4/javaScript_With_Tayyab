@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays in html</title>
+</head>
+<body>
+    <h2>This tutorial is arrays in javascript and also discuss others</h2>
+    <script>
+        // there are 2 types to create variable
+        // 1. premitive
+        // 2. objects
+        // premitive means int string const float
+        let inte = 34;
+        let string = "tayyab";
+        let bolians = true;
+        let empty_value = null;
+        let create_var = undefined;
+        // object means arrays
+        let employee = {
+            name: "tayyab",
+            salary: "100",
+            channal: "the AI World",
+            frends: "junaid zahid"
+        }
+        console.log(employee);
+        let emp=["tayyab","junaid","zahid","osama","jin","tata"]
+        let emp1= new Array(1,3,5,"tayyab",undefined);
+        console.log(emp1);
+        console.log(emp);
+        console.log(emp[2]);
+        
+        console.log(emp.length); // this is for checking the lenght of the array
+        console.log(emp.sort()); //this is for sorting the array
+        emp.push("shary");  //this is adding the new members in array
+        console.log(emp);
+        // if we assign the undefined value in array then we use this method
+        let empty_array=new Array(23);
+        console.log(empty_array);
+    </script>
+</body>
+</html>

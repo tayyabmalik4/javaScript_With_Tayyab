@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and ClearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <div>
+         Current time is <span id="time"></span>
+        </div>
+    <script>
+        // setTimeout---> Allows us to run the funtion once after the interval of time 
+        // c=setInterval--> Allows us to run the function repeatedly after the interval of time
+
+        function greet(name, byeText){
+            console.log("Hellow Good Morning", name , byeText);
+        }
+        // timeout = setTimeout(greet, 5000, "Tayyab", "Good Luck");
+        // setTimeout(greet(),5000, "tayyab","good luck");---->wrong as it is calling the function inside setTimeout
+        // console.log(timeout);
+        // when we want to cancle the function settimeout than we use cleartimeout function in command
+        // clear = clearTimeout(timeout);
+
+        // starting intervaltime
+        interv = setInterval(greet,1000,"tayyab","Good Luck")
+        // inter = setInterval((gree) => {
+        //     console.log("hellow guys", name)
+        // }, 5000);
+        // console.log(inter)
+        clearInterval(interv);
+
+        // displaying time in every secend
+        function dt(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(dt, 3000)
+    </script>
+</body>
+</html>

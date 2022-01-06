@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function in javaScript</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow function tutorial
+    </div>
+    <script>
+        // simple creating function
+        function greet(){
+            console.log('Good Luck');
+        }
+        greet()
+
+        // creating function in using arrow function
+        let gree = ()=>{
+            console.log("Say hy joo");
+        }
+        gree()
+
+        // setTimeOut using arrow function
+        setTimeout(()=>{
+            console.log("We are inside settimeout")
+        },3000);
+
+        // creating function which adding 2 numbers 
+        let sum = (a,b)=>{
+            return console.log(a+b);
+        }
+        sum(5,6)
+        // the other way
+        let sum2 = (a,b)=>console.log(a+b);
+        sum2(45,4);
+        // if we take 1 argument than we didnot use brakets
+        let half = a=> console.log(a/2);
+        half(44);
+
+        // Arrow function array
+        // simple function is not supported outer this means object but arrow function is supported
+        let obj1 = {
+            greeting: "Good Morning",
+            names: ["Tayyab", "Junaid", "Zahid", "Shary"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting , "Developer", student)
+                })
+            }
+        }
+
+        obj1.speak()
+    </script>
+</body>
+</html>

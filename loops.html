@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Java Script</title>
+</head>
+<body>
+    <h3>This is loops tutorial in javaScript</h3>
+    <script>
+        console.log("This is loops tutorial");
+        let i=0;
+        for(i=0; i<4; i++){
+            console.log(i);
+        }
+        let friend= ["junaid", "zahid","tayyab","osama","jin","tata"];
+        friend = friend.reverse()
+        for (let index = 0; index < friend.length; index++) {
+            const element = friend[index];
+            console.log(`Hellow Friend, ${element}`)
+        }
+
+        // using foreach loop in javascript
+        // printing all the elements of array using foreach loop
+        // friend.forEach(function f(element){
+        //     console.log("Hellow Friends, " ,element, "To moderen javascript")
+        // })
+        
+        // using for of loop in javascript
+        // for (element of friend){
+        //     console.log("Hellow Friends, " ,element, "To moderen javascript")
+        // }
+
+        // using for in loop in javascript
+        // use this loop to iterate over object in javascipt
+        let employee = {
+            name: "tayyab",
+            salary: "100",
+            channal:"The AI World"
+        }
+        for (key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`)
+        }
+
+        // while loop in JS
+        let a=0;
+        while(a<4){
+            console.log(`${a} is less than 4`);
+            a++;
+        }
+
+        // do while loop in JS
+        // do while loop is run is one time only
+        b=23;
+        do{
+            console.log(`${b} is less than 4 and we are inside do while loop`);
+            b++;
+        }while(b<4);
+    </script>
+</body> 
+</html>

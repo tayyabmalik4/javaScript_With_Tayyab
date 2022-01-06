@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working With JSON in javaScipt</title>
+</head>
+<body>
+    <h1>This Tutorial is Base on the JSON Working</h1>
+
+    <script>
+        console.log("This is the JSON Tutorial")
+        let jsonObj = {
+            name : "Tayyab",
+            Passion: "Programming",
+            channal : "The AI World",
+            Dream: "AI Robort"
+        }
+
+        console.log(jsonObj);
+
+        // converding object to JSON format
+        let conJSON = JSON.stringify(jsonObj);
+        console.log(conJSON);
+
+        // converting JSON to object format
+        let conObj = JSON.parse(conJSON);
+        console.log(conObj);
+    </script>
+</body>
+</html>
